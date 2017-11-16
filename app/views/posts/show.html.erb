@@ -1,0 +1,7 @@
+<h1>게시글 보기</h1>
+<p>이미지 : <img height = "100" width = "100" src = "<%= @post.image_url%>"></p>
+<p>글 : <%= @post.story%></p>
+<%= link_to "[수정]", edit_post_path(@post.id)%>
+<%= link_to "[삭제]", post_path(@post.id), method: "delete"%>
+
+
